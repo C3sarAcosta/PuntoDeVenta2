@@ -10,19 +10,22 @@ using System.Windows.Forms;
 
 namespace PuntoDeVenta
 {
-    public partial class Dashboard : Form
+    public partial class FrmDashboard : Form
     {
-        public Dashboard()
+        public FrmDashboard()
         {
             InitializeComponent();
         }
 
         private void btnConfiguraciones_Click(object sender, EventArgs e)
         {
-            lblNombreUsuario.Text = "César Acosta";
-            Form1 fm1 = new Form1();
-            fm1.Show();
-            this.Hide();
+
+        }
+
+        private void btnEmpleados_Click(object sender, EventArgs e)
+        {
+            FrmEmpleados frmEmpleados = new FrmEmpleados();
+            frmEmpleados.Show();
         }
     }
 }
