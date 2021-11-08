@@ -17,12 +17,14 @@ namespace PuntoDeVenta.Models
                 .EnableSensitiveDataLogging(true);
 
             /*SQL
-             * optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=Nombre de la base de datos; Itegrated Security=True")
+             * optionsBuilder.UseSqlServer("Data Source=; Initial Catalog=Nombre de la base de datos; Itegrated Security=True")
+             * 
+             * optionsBuilder.UseSqlServer("Data Source=; Initial Catalog=Nombre de la base de datos; Persist Security Info=True;User ID=sa;Password=TuContraseña")
             */
         }
 
-            //Propiedad la cual le idicia a EFC que vamos a tener una tabla Emplleados 
-            public DbSet<Empleados> Empleados { get; set; }
+        //Propiedad la cual le idicia a EFC que vamos a tener una tabla Emplleados 
+        public DbSet<Empleados> Empleados { get; set; }
         
     }
 }
