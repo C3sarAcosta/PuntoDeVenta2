@@ -25,7 +25,9 @@ namespace PuntoDeVenta.Models
 
         //Propiedad la cual le idicia a EFC que vamos a tener una tabla Emplleados 
         public DbSet<Empleados> Empleados { get; set; }
-        
+        public DbSet<Clientes> Clientes { get; set; }
+        public DbSet<Productos> Productos { get; set; }
+
     }
 }
 

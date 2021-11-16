@@ -27,5 +27,17 @@ namespace PuntoDeVenta
             FrmEmpleados frmEmpleados = new FrmEmpleados();
             frmEmpleados.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmClientes frmClientes = new FrmClientes();
+            frmClientes.Show();
+        }
+
+        private void btnInventario_Click(object sender, EventArgs e)
+        {
+            FrmProductos frmProductos = new FrmProductos();
+            frmProductos.Show();
+        }
     }
 }

@@ -122,7 +122,7 @@ namespace PuntoDeVenta
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             EliminarEmpleado();
-            TodosEmpleados(); ;
+            TodosEmpleados(); 
         }
 
         private void EliminarEmpleado()
@@ -141,5 +141,7 @@ namespace PuntoDeVenta
                 }
             }
         }
+
+        
     }
 }
